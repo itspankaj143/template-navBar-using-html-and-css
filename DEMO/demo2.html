@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 5rem;
+        padding: 30px 10%;
+        /* height: 75px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(73, 33, 73);
+        opacity: 86%;
+      }
+      .logo {
+        font-size: 1.8rem;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      li {
+        display: inline-block;
+        list-style: none;
+        padding: 0px 20px;
+      }
+      a,
+      button {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+      }
+      button {
+        background-color: rgb(65, 144, 144);
+        padding: 9px 20px;
+        border-radius: 10px;
+        border: none;
+      }
+      li :hover {
+        background-color: violet;
+        padding: 10px 20px;
+        transition: all 1s;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: violet;
+        transition: all 2.8s;
+      }
+      .content-items img {
+        width: 100%;
+        height: 80vh;
+        /* background-size: 100% 100%; */
+        /* background-repeat: no-repeat; */
+        /* background-position: 70% 30%; */
+      }
+      .logo img {
+        width: 100%;
+        height: 9vh;
+        border-radius: 20px;
+        padding-top: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p><img src="../image/IMG_20180909_164026.jpg" alt="" /></p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <button><a href="#">Get Started</a></button>
+    </header>
+    <div class="content-items">
+      <img src="../image/tree-736885__340 - Copy.webp" alt="" />
+    </div>
+  </body>
+</html>

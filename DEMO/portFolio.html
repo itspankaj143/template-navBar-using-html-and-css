@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .hero {
+        height: 100vh;
+        width: 100%;
+        background: #edf2fc;
+        font-family: "Times New Roman", Times, serif;
+        position: relative;
+      }
+      nav {
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h3 > span {
+        width: 100px;
+        font-variant: small-caps;
+        font-size: 1.9rem;
+        cursor: pointer;
+      }
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+        font-size: 1.2rem;
+      }
+      nav ul li:hover {
+        color: white;
+        background-color: #ff4321;
+        padding: 5px 20px;
+        border-radius: 5px;
+        transition: all 1s ease-out;
+      }
+      .info {
+        margin-left: 8%;
+        margin-top: 15%;
+      }
+      .info h1 {
+        font-size: 50px;
+        color: #212121;
+        margin-bottom: 20px;
+      }
+      span {
+        color: #ff4321;
+        font-variant: small-caps;
+      }
+      span:hover {
+        color: #37474f;
+        transition: all 2s ease-in;
+      }
+      .info p {
+        color: #606163;
+        line-height: 22px;
+      }
+      .info a {
+        background: wheat;
+        padding: 10px 18px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: yellow;
+        font-weight: 800;
+        display: inline-block;
+        margin: 30px 10px;
+        border-radius: 5px;
+        outline: 3px solid #ff4321;
+      }
+      .info a:hover {
+        background-color: #ff4321;
+        border-radius: 5px;
+        color: #1c1919;
+
+        transition: all 4s ease-out;
+      }
+      .img-box {
+        width: 45%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+      }
+      .img-box img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        transition: bottom 1s;
+      }
+      .img-box:hover .back-img {
+        bottom: 40px;
+      }
+      .img-box:hover .main-img {
+        left: 54%;
+      }
+      .img-box .main-img {
+        border-radius: 100px 20px 100px 20px;
+        border-color: teal;
+        background-color: #ff4321;
+        width: 350px;
+        /* clip-path: ellipse(100% 39% at 50% 50%); */
+        /* clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        ); */
+        clip-path: polygon(50% 0%, 200% 50%, 50% 100%, 0% 50%);
+        background: transparent;
+      }
+      .social-links {
+        margin-left: 8%;
+        margin-top: 30px;
+      }
+      .social-links a {
+        font-size: 30px;
+        color: #606163;
+        margin-right: 20px;
+      }
+      .social-links a:hover {
+        color: #ff4321;
+      }
+      #cv {
+        color: #ff4321;
+        font-size: 1.5rem;
+      }
+      #contact {
+        padding: 10px 18px;
+        font-size: 1.4rem;
+        outline: none;
+        border: 2px solid black;
+        color: #212121;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h3><span>Felix</span> It's</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>PortFolio</li>
+          <li>Service</li>
+          <!-- <li>Contact Me</li> -->
+          <li>Hire Me</li>
+        </ul>
+      </nav>
+      <div class="info">
+        <h1>I'm <span class="auto-input"></span></h1>
+        <p>
+          This is my Official PortFolio WebSite to showCase my all works related
+          to <br />
+          web Development and All journey of Coding in
+          C||CPP||PYTHON||JAVASCRIPT||..
+        </p>
+        <a href="./Pankaj_Resume.pdf">DownLoad <span id="cv">[CV]</span> </a>
+        <a href="#" id="contact">Contact ME </a>
+      </div>
+      <div class="img-box">
+        <img class="back-img" src="./pattern.png" alt="" />
+        <img class="main-img" src="../image/IMG_20180909_164026.jpg" alt="" />
+      </div>
+
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-behance"></i></a>
+        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/ddfa11c336.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["PanKaj KumaR", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
